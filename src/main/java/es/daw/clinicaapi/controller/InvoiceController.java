@@ -16,7 +16,7 @@ public class InvoiceController {
     private final InvoiceService invoiceService;
 
     @GetMapping("/{id}/invoice")
-    //SEguridad...pte
+    //SEGURIDAD PENDIENTE PARA JUEVES 19 FEBRERO
     public ResponseEntity<InvoiceResponse> issueInvoice(
             @PathVariable("id") Long appointmentId,
             @RequestBody InvoiceIssueRequest request
